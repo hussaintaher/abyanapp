@@ -1,9 +1,5 @@
 const Customer = require('./../models/Customer')
-<<<<<<< HEAD
-// Hello
-=======
 
->>>>>>> 182a4f1aeec8260b62da65727ae80b81d9188e07
 const customerController = {
     test: async (req,res) => {
         try {
