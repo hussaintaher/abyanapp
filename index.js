@@ -14,11 +14,10 @@ const customerController = require('./controllers/customerController')
 //-----------------------------------------------------------------------
 // Routes
 //-----------------------------------------------------------------------
-<<<<<<< HEAD
 app.post('/customer', customerController.createCustomer)
-=======
+
 app.post('/customer', customerController.test)
->>>>>>> 182a4f1aeec8260b62da65727ae80b81d9188e07
+
 app.get('/customer', customerController.getCustomer)
 
 
@@ -39,12 +38,10 @@ mongoose.connection.on('error', (err) => {
 //-----------------------------------------------------------------------
 // Port Connection
 //-----------------------------------------------------------------------
-<<<<<<< HEAD
 const PORT = process.env.PORT || 5000
 app.listen(PORT , ()=>{
     console.log('Server listening to port ' + PORT)
-=======
-app.listen(process.env.DB_PORT , ()=>{
+})
+app.listen(process.env.DB_PORT , () =>{
     console.log('Server listening to port ' + process.env.DB_PORT)
->>>>>>> 182a4f1aeec8260b62da65727ae80b81d9188e07
 })
