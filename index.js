@@ -15,9 +15,6 @@ const customerController = require('./controllers/customerController')
 // Routes
 //-----------------------------------------------------------------------
 app.post('/customer', customerController.createCustomer)
-
-app.post('/customer', customerController.test)
-
 app.get('/customer', customerController.getCustomer)
 
 
